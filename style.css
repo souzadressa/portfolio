@@ -1,0 +1,211 @@
+/* Paleta Lilás monocromática */
+:root {
+  --lilas-50: #f5eff6;
+  --lilas-100: #e0d4e3;
+  --lilas-200: #c2a8c7;
+  --lilas-300: #a57dab;
+  --lilas-400: #7a5c80;
+  --lilas-500: #533d57;
+  --lilas-600: #2e2030;
+  --lilas-700: #160e18;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--lilas-700);
+  min-height: 100vh;
+  background-color: var(--lilas-50);
+  background-image:
+    radial-gradient(circle at 85% 15%, var(--lilas-200) 0%, transparent 40%),
+    radial-gradient(circle at 10% 90%, var(--lilas-200) 0%, transparent 35%),
+    radial-gradient(circle at 50% 45%, var(--lilas-100) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Perfil */
+.perfil {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.perfil img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--lilas-300);
+  margin-bottom: 16px;
+}
+
+.perfil h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.perfil p {
+  font-size: 14px;
+  color: var(--lilas-500);
+  max-width: 420px;
+}
+
+/* Botões */
+.botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.botao {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--lilas-700);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--lilas-300);
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--lilas-400);
+  color: #fff;
+}
+
+/* Redes sociais */
+.redes {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.redes a {
+  color: var(--lilas-600);
+}
+
+.redes a:hover {
+  color: var(--lilas-300);
+}
+
+.redes svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: var(--lilas-500);
+}
+
+footer span {
+  color: var(--lilas-300);
+}
+
+/* Páginas internas */
+.voltar {
+  align-self: flex-start;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--lilas-500);
+  text-decoration: none;
+}
+
+.voltar:hover {
+  color: var(--lilas-300);
+}
+
+.conteudo {
+  width: 100%;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--lilas-200);
+  border-radius: 8px;
+}
+
+.conteudo h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.conteudo p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Cards de projetos */
+.projetos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--lilas-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  background-color: var(--lilas-200);
+}
+
+.card-texto {
+  padding: 16px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  color: var(--lilas-500);
+  margin-bottom: 16px;
+}
+
+.card .botao {
+  padding: 10px;
+}
+
+.card-botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.card-botoes .botao {
+  flex: 1;
+  padding: 10px 4px;
+  font-size: 13px;
+  white-space: nowrap;
+}
